@@ -5,11 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
+  --primary: #0958ad;
+  --secondary: #a2a1eb;
+  --tertiary: #ff3d2e;
+  --light: #ffc107;
+  --dark: #291057;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);

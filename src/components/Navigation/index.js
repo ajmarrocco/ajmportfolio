@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
+    const [titles] = useState([
+        {
+            name: 'About Me'
+        },
+        { name: 'Portfolio' },
+        { name: 'Contact' },
+        { name: 'Resume' },
+    ]);
+    const [currrentTitle, setCurrentTitle] = useState(titles[0]);
+
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currrentTitle.name);
+    }, [currrentTitle]);
+    
 
     return (
         <header>
@@ -11,20 +26,19 @@ function Nav() {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="#about">
-                            About me
-                        </a>
-                    </li>
-                    <li className="mx-2">
-                        <span>Portfolio</span>
-                    </li>
-                    <li className="mx-2">
-                        <span>Contact</span>
-                    </li>
-                    <li className="mx-2">
-                        <span>Resume</span>
-                    </li>
+                    {titles.map((title) => (
+                        <li className={`mx-1 ${
+                            currrentTitle.name === title.name && 'navActive'
+                            }`} key={title.name}>
+                        <span
+                            onClick={() => {
+                            setCurrentTitle(title)
+                            }}
+                        >
+                            {capitalizeFirstLetter(title.name)}
+                        </span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
