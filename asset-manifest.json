@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ajmportfolio/static/css/main.2f3453c2.css",
+    "main.js": "/ajmportfolio/static/js/main.9fd5c208.js",
+    "static/js/787.48a05dca.chunk.js": "/ajmportfolio/static/js/787.48a05dca.chunk.js",
+    "static/media/2.png": "/ajmportfolio/static/media/2.fb38b57fbc363cc70b52.png",
+    "static/media/1.png": "/ajmportfolio/static/media/1.dc1f051eeee7887cf09f.png",
+    "static/media/0.png": "/ajmportfolio/static/media/0.5b3930331278ffc0f6fe.png",
+    "static/media/Anthony Marrocco Resume.pdf": "/ajmportfolio/static/media/Anthony Marrocco Resume.b01a7b85a0b7a2ad29f4.pdf",
+    "static/media/3.png": "/ajmportfolio/static/media/3.87031e5daaacf1f6a11c.png",
+    "static/media/4.png": "/ajmportfolio/static/media/4.701e71ed0347f63b08f7.png",
+    "static/media/5.png": "/ajmportfolio/static/media/5.1d464ab039e59211d78a.png",
+    "static/media/profile.jpg": "/ajmportfolio/static/media/profile.3ad4c857ddd9e441c921.jpg",
+    "index.html": "/ajmportfolio/index.html",
+    "main.2f3453c2.css.map": "/ajmportfolio/static/css/main.2f3453c2.css.map",
+    "main.9fd5c208.js.map": "/ajmportfolio/static/js/main.9fd5c208.js.map",
+    "787.48a05dca.chunk.js.map": "/ajmportfolio/static/js/787.48a05dca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f3453c2.css",
+    "static/js/main.9fd5c208.js"
+  ]
+}
