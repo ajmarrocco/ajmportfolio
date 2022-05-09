@@ -23,7 +23,7 @@ function App() {
         {(currentTitle === 'About Me') ? <About /> :
         (currentTitle === 'Portfolio') ? <Project /> :
         (currentTitle === 'Contact') ? <Contact /> :
-        // (currentTitle === 'Resume') ? <Resume /> :
+        (currentTitle === 'Resume') ? <Resume /> :
         <About /> }
       </main>
       <Footer></Footer>
