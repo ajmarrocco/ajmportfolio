@@ -1,89 +1,63 @@
 import React, { useState } from 'react';
-import './style.css';
 
-// Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
 
-function Form() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [message, setMesage] = useState('');
+function ContactForm() {
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+
     const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
 
-    const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+        setFormState({ [e.target.name]: e.target.value });
+        console.log('Form', formState);
+        }
+    };
 
-    // Based on the input type, we set the state of either email, username, and password
-
-    if (inputType === 'email') {
-        setEmail(inputValue);
-    } else if (inputType === 'name') {
-        setName(inputValue);
-    } else{
-        setMesage(inputValue);
-    }
-};
-
-const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !name) {
-        setErrorMessage('Email or name is invalid');
-        // We want to exit out of this code block if something is wrong so that the user can correct it
-        return;
-        // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-
-    // If successful, we want to clear out the input after registration.
-    setName('');
-    setMesage('');
-    setEmail('');
-    alert(`Hello ${name}`);
-};
+    const handleChange = (e) => {
+        if (e.target.name === 'email') {
+        const isValid = validateEmail(e.target.value);
+        if (!isValid) {
+            setErrorMessage('Your email is invalid.');
+        } else {
+            setErrorMessage('');
+        }
+        } else {
+        if (!e.target.value.length) {
+            setErrorMessage(`${e.target.name} is required.`);
+        } else {
+            setErrorMessage('');
+        }
+        }
+    };
 
     return (
-        <div>
-        <p>Hello {name}</p>
-        <form className="form">
-            <input
-                value={name}
-                name="name"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="name"
-            />
-            <input
-                value={email}
-                name="email"
-                onChange={handleInputChange}
-                type="email"
-                placeholder="email"
-            />
-            <input
-                value={message}
-                name="message"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="message"
-            />
-            <button type="button" onClick={handleFormSubmit}>
-                Submit
-            </button>
-        </form>
-        {errorMessage && (
+        <section>
+        <h1 data-testid="h1tag">Contact me</h1>
+        <form id="contact-form" onSubmit={handleSubmit}>
             <div>
-            <p className="error-text">{errorMessage}</p>
+            <label htmlFor="name">Name:</label>
+            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
             </div>
-        )}
-        </div>
+            <div>
+            <label htmlFor="email">Email address:</label>
+            <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+            </div>
+            <div>
+            <label htmlFor="message">Message:</label>
+            <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+            </div>
+            {errorMessage && (
+            <div>
+                <p className="error-text">{errorMessage}</p>
+            </div>
+            )}
+            <button data-testid="button" type="submit">Submit</button>
+        </form>
+        </section>
     );
 }
 
-export default Form;
+export default ContactForm;

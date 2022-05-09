@@ -54,12 +54,15 @@ function Project(props) {
             </h2>
             <div className="flex-row">
                 {projects.map((image, i) => (
-                    <img
-                    src={require(`../../assets/small/${i}.png`)}
-                    alt={image.name}
-                    className="img-thumbnail mx-1"
-                    key={image.name}
-                    />
+                    <div>
+                        <h4>{image.name}</h4>
+                        <img
+                        src={require(`../../assets/small/${i}.png`)}
+                        alt={image.name}
+                        className="img-thumbnail mx-1"
+                        key={image.name}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

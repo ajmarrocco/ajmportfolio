@@ -1,48 +1,32 @@
-import React, { useState, useEffect }  from 'react';
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React, { useEffect }  from 'react';
 
-function Nav() {
-    const [titles] = useState([
-        {
-            name: 'About Me'
-        },
-        { name: 'Portfolio' },
-        { name: 'Contact' },
-        { name: 'Resume' },
-    ]);
-    const [currrentTitle, setCurrentTitle] = useState(titles[0]);
+function Navigation(props) {
+    const { titles = [], setCurrentTitle, currrentTitle} = props;
 
     useEffect(() => {
-        document.title = capitalizeFirstLetter(currrentTitle.name);
+        document.title = currrentTitle;
     }, [currrentTitle]);
     
 
     return (
-        <header>
-            <h2>
-                <a href="/">
-                    Anthony Marrocco
-                </a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
-                    {titles.map((title) => (
-                        <li className={`mx-1 ${
-                            currrentTitle.name === title.name && 'navActive'
-                            }`} key={title.name}>
-                        <span
-                            onClick={() => {
-                            setCurrentTitle(title)
-                            }}
-                        >
-                            {capitalizeFirstLetter(title.name)}
-                        </span>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        </header>
+        <nav>
+            <ul className="flex-row">
+                {titles.map((title) => (
+                    <li className={`mx-1 ${
+                        currrentTitle === title && 'navActive'
+                        }`} key={title}>
+                            <span
+                                onClick={() => {
+                                    setCurrentTitle(title)
+                                }}
+                            >
+                                {title}
+                            </span>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
 }
 
-export default Nav;
+export default Navigation;
