@@ -74,22 +74,26 @@ function Project(props) {
                         className="img-thumbnail mx-1"
                         key={image.name}
                         />
-                        <a
-                            className="App-link"
-                            href={image.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Github
-                        </a>
-                        <a
-                            className="App-link"
-                            href={image.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Deployed Url
-                        </a>
+                        <p>
+                            <a
+                                className="App-link"
+                                href={image.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Github
+                            </a>
+                        </p>
+                        <p>
+                            <a
+                                className="App-link"
+                                href={image.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Deployed Url
+                            </a>
+                        </p>
                     </div>
                 ))}
             </div>
