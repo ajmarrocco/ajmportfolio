@@ -8,7 +8,7 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-  const [titles] = useState(['About Me', 'Portfolio', 'Contact', 'Resume' ]);
+  const [titles] = useState(['About Me', 'Portfolio', 'Contact', 'Resume']);
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
 

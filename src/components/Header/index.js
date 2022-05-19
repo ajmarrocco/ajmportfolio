@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Header(props) {
     const { 
         titles = [], 
         setCurrentTitle, 
-        currrentTitle
+        currentTitle
     } = props;
 
-    // useEffect(() => {
-    //     document.title = currrentTitle.name;
-    // }, [currrentTitle.name]);
+    useEffect(() => {
+        document.title = currentTitle;
+    }, [currentTitle]);
 
     return (
         <header className="flex-row px-1">
@@ -23,7 +23,7 @@ function Header(props) {
                     {titles.map((title) => (
                     <li
                         className={`mx-1 ${
-                            currrentTitle === title && `navActive`
+                            currentTitle === title && `navActive`
                         }`}
                         key={title}
                     >
