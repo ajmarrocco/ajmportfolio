@@ -8,7 +8,8 @@ main {
   --primary: #0958ad;
   --secondary: #a2a1eb;
   --tertiary: #ff3d2e;
-  --light: #ffc107;
+  /* --light: #ffc107; */
+  --light: #ffffff;
   --dark: #291057;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -28,13 +29,17 @@ body {
 }
 
 body {
+  background-image: url("./assets/cover/background-copy.jpg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
   margin: 0;
   padding: 0;
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  /* background: var(--dark); */
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
@@ -291,4 +296,23 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+/* footer {
+  position: absolute;
+  left:0;
+  bottom:0;
+  right:0;      
+} */
+
+footer {
+  background-color: var(--dark);
+  text-align: center;
+  height: 60px;
+  padding-top: 12px;
+  font-size: 20px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  right:0; 
 }
