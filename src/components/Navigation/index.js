@@ -3,11 +3,6 @@ import React, { useEffect }  from 'react';
 function Navigation(props) {
     const { titles = [], setCurrentTitle, currrentTitle} = props;
 
-    useEffect(() => {
-        document.title = currrentTitle;
-    }, [currrentTitle]);
-    
-
     return (
         <nav>
             <ul className="flex-row">

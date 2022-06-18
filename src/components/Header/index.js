@@ -8,15 +8,15 @@ function Header(props) {
     } = props;
 
     useEffect(() => {
-        document.title = currentTitle;
+        document.title = "Anthony Marrocco - " + currentTitle;
     }, [currentTitle]);
 
     return (
         <header className="flex-row px-1">
             <h2>
-                <a href="/">
+                {/* <a href="/"> */}
                     Anthony Marrocco
-                </a>
+                {/* </a> */}
             </h2>
             <nav>
                 <ul className="flex-row">
