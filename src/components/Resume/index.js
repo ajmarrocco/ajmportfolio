@@ -14,9 +14,13 @@ function Resume() {
             <a                  
                 className="App-link resume-link"
                 href={downloadResume}
-                target="_blank"
-                rel="noopener noreferrer">
-                    <h3>Download Resume here!</h3>
+                download="Anthony_Marrocco_Resume"
+                >
+                    <span className="icon">
+                        <i className="fas fa-download"></i>
+                    </span>
+                    {"   "}
+                    Download Resume here!
             </a>
             <ul className='language-list'> 
                 <h3 style={{display: 'inline'}}>
@@ -60,7 +64,7 @@ function Resume() {
                 </li>
                 ))}
             </ul>
-            <p>
+            <p className='icon-p'>
                 <span className = "icon" title = 'HTML 5' data-tooltip = "HTML 5"><i className="fab fa-html5"></i></span>{" "}
                 <span className = "icon" title = 'CSS' data-tooltip = 'CSS'><i className="fab fa-css3"></i></span>{" "}
                 <span className = "icon" title = 'JavaScript' data-tooltip = 'JavaScript'><i className="fab fa-js"></i></span>{" "}

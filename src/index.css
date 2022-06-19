@@ -283,16 +283,28 @@ button {
 	padding: 10px 15px;	
 }
 
-.resume-title, .language-list, .tool-list, .resume-link, .framework-list{
+.resume-title, .language-list, .tool-list, .framework-list, .icon-p{
   text-align: center;
 }
+
+.resume-link {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.resume-link i {
+  font-size: 20px;
+}
+
 
 .about-img{
   width: 25%;
 }
 
-i {
-  font-size: 100px;
+.icon {
+  font-size: 50px;
+  padding-left: 10px;
 }
 
 
