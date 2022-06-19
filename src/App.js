@@ -13,7 +13,7 @@ function App() {
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
 
   return (
-    <div>
+    <div className='div-main'>
       <Header            
             titles={titles}
             setCurrentTitle={setCurrentTitle}

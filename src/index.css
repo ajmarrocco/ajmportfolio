@@ -25,7 +25,7 @@ main {
 
 html,
 body {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -42,7 +42,6 @@ body {
   /* background: var(--dark); */
   color: var(--light);
   font-family: 'Helvetica', sans-serif;
-
 }
 
 h1,
@@ -318,31 +317,12 @@ a {
   right:0;      
 } */
 
-/* footer {
+footer {
   background-color: var(--dark);
-  text-align: center;
-  height: 60px;
-  padding-top: 12px;
-  font-size: 20px;
   position: absolute;
   left:0;
   bottom:0;
   right:0; 
-} */
-
-/* styles footer */
-footer{
-  margin-top: 20px;
-  margin-bottom: 0px;
-  background-color: var(--tertiary-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* styles h2 and h3 in footer */
-footer h2, footer h3{
-  padding: 20px;
-  text-shadow: var(--blue-shadow);
 }
 
 @media screen and (max-width: 1020px) {

@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
 
     return (
-        <footer className="mx-2">
-            <h3>&copy; 2022 by Anthony Marrocco 🌌</h3>
+        <footer>
+            <h3 className="px-2">&copy; 2022 by Anthony Marrocco 🌌</h3>
         </footer>
     )
 }
