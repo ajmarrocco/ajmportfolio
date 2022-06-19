@@ -283,20 +283,48 @@ button {
 	padding: 10px 15px;	
 }
 
-.resume-title, .language-list, .tool-list, .framework-list, .icon-p{
+.resume-title, .language-list, .database-list, .tool-list, .framework-list, .icon-p{
+  text-align: center;
+}
+
+.resume-p{
   text-align: center;
 }
 
 .resume-link {
   font-size: 20px;
-  display: block;
-  text-align: center;
+  background-color: var(--dark);
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  background-color: var(--light);
+  color: var(--primary);
+  text-decoration: none;
 }
 
 .resume-link i {
   font-size: 20px;
 }
 
+.resume-container{
+  margin-bottom: 50px;
+}
+
+.skills-container{
+  /* background: var(--dark); */
+  box-shadow: 3px 3px 3px rgb(0 0 0 / 50%), -3px -3px 3px rgb(0 0 0 / 50%);
+  /* box-shadow: initial; */
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.container-both{
+  text-align: center;
+}
 
 .about-img{
   width: 25%;
