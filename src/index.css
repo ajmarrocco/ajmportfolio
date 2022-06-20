@@ -330,7 +330,7 @@ button {
   padding: 20px;
 }
 
-.container-both{
+.resume-skills{
   text-align: center;
 }
 
@@ -362,19 +362,35 @@ a {
   color: var(--secondary);
 }
 
-/* footer {
-  position: absolute;
-  left:0;
-  bottom:0;
-  right:0;      
-} */
-
 footer {
   background-color: var(--dark);
   position: absolute;
   left:0;
   bottom:0;
   right:0; 
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.contact-title, .contact-container {
+  text-align: center;
+}
+
+#contact-form{
+  display: inline-block;
 }
 
 @media screen and (max-width: 1020px) {

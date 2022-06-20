@@ -9,7 +9,7 @@ function Resume() {
     const [frameworks] = useState(['React','Express','Bootstrap', 'Node.js','jQuery', 'Redux']);
 
     return (
-        <div className='container-both'>
+        <div className='resume-skills'>
             <div className='resume-container'>
                 <h2 className='resume-title'>
                     Resume
