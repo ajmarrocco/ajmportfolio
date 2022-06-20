@@ -49,7 +49,7 @@ function Project(props) {
             url: `https://deep-thoughts-3510.herokuapp.com/`
         },
         {
-            name: "Keepin Up With My Budget!",
+            name: "Keeping Up With My Budget!",
             description:
                 `A budget tracker that uses a NoSQL database to enable a website to handle 
                 large amounts of data`,
@@ -67,7 +67,8 @@ function Project(props) {
 
     ]);
 
-    const [currentProject, setCurrentProject] = useState();
+    const [currentProject, setCurrentProject] = useState(0);
+    const length = projects.length;
 
     return (
         <div>
