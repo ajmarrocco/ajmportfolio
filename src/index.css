@@ -86,13 +86,18 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+	border-radius: 5px;
+	color: var(--light);
   text-decoration: none;
-  font-weight: bold;
+	font-weight: 600;
+	padding: 2px 4px;
+	margin-left: -2px;
+	margin-right: -2px;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 header {
@@ -133,7 +138,7 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 80%;
 }
 
 input {
@@ -163,8 +168,7 @@ nav  li {
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
+	height: 200px;
 	border: 3px solid #cccccc;
 	padding: 5px;
 }
@@ -184,6 +188,15 @@ textarea {
 .space-between {
   justify-content: space-between;
 }
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
 
 .flex-end {
   justify-content: flex-end;
@@ -348,16 +361,6 @@ button {
   width: 70%;
 }
 
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
-}
-
 .navActive {
   color: var(--secondary);
 }
@@ -379,6 +382,7 @@ label {
 input, textarea{
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 textarea{
@@ -391,6 +395,14 @@ textarea{
 
 #contact-form{
   display: inline-block;
+}
+
+.contact-info{
+  text-align: center;
+}
+
+.contact{
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 1020px) {
@@ -429,7 +441,7 @@ textarea{
     font-size: 1.5rem;
   }
 
-  .icon{
+  .icon, .contact{
     font-size: 1.5rem;
   }
 }
@@ -443,7 +455,7 @@ textarea{
     font-size: 1rem;
   }
 
-  .icon{
+  .icon, .contact{
     font-size: 1.25rem;
   }
 
@@ -454,4 +466,7 @@ textarea{
   .py-12 {
     padding-top: 3px;
   }
+  /* .contact{
+    display: block;
+  } */
 }

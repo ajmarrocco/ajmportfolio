@@ -100,7 +100,7 @@ function Resume() {
                     <span className = "icon" title = 'React' data-tooltip = 'React'><i className="fab fa-react"></i></span>{" "}
                     <span className = "icon" title = 'Python' data-tooltip = 'Python'><i className="fab fa-python"></i></span>{" "}
                     <span className = "icon" title = 'AWS' data-tooltip = 'Amazon Web Services'><i className="fab fa-aws"></i></span>{" "}
-                    <span className = "icon" title = 'GitHub' data-tooltip = 'GitHub'><i className="fab fa-github-square"></i></span>
+                    <span className = "icon" title = 'GitHub' data-tooltip = 'GitHub'><i className="fab fa-github"></i></span>
                 </p>
             </div>
         </div>
