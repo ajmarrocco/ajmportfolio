@@ -1,5 +1,6 @@
 import React, { useEffect }  from 'react';
 
+// not used
 function Navigation(props) {
     const { titles = [], setCurrentTitle, currrentTitle} = props;
 

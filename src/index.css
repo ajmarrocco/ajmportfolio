@@ -234,6 +234,10 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+.py-12 {
+  padding-top: 12px;
+}
+
 .card {
   width: 25%;
   text-align: center;
@@ -285,6 +289,10 @@ button {
 
 .resume-title, .language-list, .database-list, .tool-list, .framework-list, .icon-p{
   text-align: center;
+}
+
+.language-list, .database-list, .tool-list, .framework-list {
+  padding: auto, 0px;
 }
 
 .resume-p{
@@ -385,6 +393,10 @@ footer {
   .about-p{
     width: 100%;
   }
+
+  .icon{
+      font-size: 2rem;
+  }
   
 }
 
@@ -400,6 +412,10 @@ footer {
   h3{
     font-size: 1.5rem;
   }
+
+  .icon{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -409,5 +425,17 @@ footer {
 
   h3{
     font-size: 1rem;
+  }
+
+  .icon{
+    font-size: 1.25rem;
+  }
+
+  .resume-link {
+    font-size: 14px;
+  }
+
+  .py-12 {
+    padding-top: 3px;
   }
 }

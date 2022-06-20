@@ -32,56 +32,56 @@ function Resume() {
                 <h2 className='resume-title'>
                     Technical Skills:
                 </h2>
-                <ul className='language-list'> 
+                <ul className='language-list flex-row'> 
                     <h3 style={{display: 'inline'}}>
                         Languages:
                     </h3>
                     {languages.map(language => (
                     <li
                         style={{display: 'inline'}}
-                        className={`mx-1`}
+                        className={`mx-1 py-12`}
                         key={language}
                     >
                         {language}
                     </li>
                     ))}
                 </ul>
-                <ul className='database-list'> 
+                <ul className='database-list flex-row'> 
                     <h3 style={{display: 'inline'}}>
                         Datebases:
                     </h3>
                     {databases.map(database => (
                     <li
                         style={{display: 'inline'}}
-                        className={`mx-1`}
+                        className={`mx-1 py-12`}
                         key={database}
                     >
                         {database}
                     </li>
                     ))}
                 </ul>
-                <ul className='tool-list'> 
+                <ul className='tool-list flex-row'> 
                     <h3 style={{display: 'inline'}}>
                         Tools:
                     </h3>
                     {tools.map(tool => (
                     <li
                         style={{display: 'inline'}}
-                        className={`mx-1`}
+                        className={`mx-1 py-12`}
                         key={tool}
                     >
                         {tool}
                     </li>
                     ))}
                 </ul>
-                <ul className='framework-list'> 
+                <ul className='framework-list flex-row'> 
                     <h3 style={{display: 'inline'}}>
                         Frameworks:
                     </h3>
                     {frameworks.map(framework => (
                     <li
                         style={{display: 'inline'}}
-                        className={`mx-1`}
+                        className={`mx-1 py-12`}
                         key={framework}
                     >
                         {framework}
