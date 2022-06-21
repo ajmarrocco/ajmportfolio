@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 
 function Project(props) {
     const [projects] = useState([
@@ -70,42 +71,65 @@ function Project(props) {
     const [currentProject, setCurrentProject] = useState(0);
     const length = projects.length;
 
+    const nextSlide = () => {
+        setCurrentProject(currentProject === length - 1 ? 0 : currentProject + 1);
+    }
+
+    const prevSlide = () => {
+        setCurrentProject(currentProject === 0 ? length - 1 : currentProject - 1);
+    }
+
+    if(!Array.isArray(projects) || length < 0){
+        return null;
+    }
+
     return (
         <div>
-            <h2>
+            <h2 className='portfolio-title'>
                 Portfolio
             </h2>
-            <div className="flex-row">
+            <div className="slider flex-row">
+                <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
+                <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
                 {projects.map((image, i) => (
-                    <div>
-                        <h4>{image.name}</h4>
-                        <img
-                        src={require(`../../assets/small/${i}.png`)}
-                        alt={image.name}
-                        className="img-thumbnail mx-1"
-                        key={image.name}
-                        />
-                        <p>
-                            <a
-                                className="App-link"
-                                href={image.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Github
-                            </a>
-                        </p>
-                        <p>
-                            <a
-                                className="App-link"
-                                href={image.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Deployed Url
-                            </a>
-                        </p>
+                    // return (
+                    <div className={i === currentProject ? 'slide active' : 'slide'} key={i}>
+                        {i === currentProject && (
+                            <div>
+                                <h4>{image.name}</h4>
+                                <img
+                                src={require(`../../assets/small/${i}.png`)}
+                                alt={image.name}
+                                className="img-thumbnail mx-1"
+                                key={image.name}
+                                />
+                                <div className='flex-row space-between mx-2'>
+                                <p className='flex-row github-p'>
+                                    <a
+                                        className="App-link github-link"
+                                        href={image.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Github
+                                    </a>
+                                </p>
+                                <p className='deployed-url-p'>
+                                    <a
+                                        className="App-link deployed-url-link"
+                                        href={image.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Deployed Url
+                                    </a>
+                                </p>
+                                </div>
+                            </div>
+                        )}
+                        
                     </div>
+                    
                 ))}
             </div>
         </div>

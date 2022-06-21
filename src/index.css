@@ -256,12 +256,6 @@ textarea {
   text-align: center;
 }
 
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  cursor: pointer;
-}
-
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
 	bottom: 0;
@@ -403,6 +397,60 @@ textarea{
 
 .contact{
   font-size: 1.75rem;
+}
+
+.portfolio-title{
+  text-align: center;
+}
+
+.slider{
+  position: relative;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-thumbnail {
+  width: 900px;
+  height: 540px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  font-size: 3rem;
+  color: var(--light);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  font-size: 3rem;
+  color: var(--light);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 
 @media screen and (max-width: 1020px) {
