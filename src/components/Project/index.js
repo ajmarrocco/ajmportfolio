@@ -106,7 +106,7 @@ function Project(props) {
                             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
                             {i === currentProject && (
                                 <div>
-                                    <h4>{image.name}</h4>
+                                    <h4 className='image-title'>{image.name}</h4>
                                     <img
                                     src={require(`../../assets/small/${i}.png`)}
                                     alt={image.name}
@@ -119,7 +119,7 @@ function Project(props) {
                                     <p className='image-technologies'>
                                         {image.technologies}
                                     </p>
-                                    <div className='flex-row space-between mx-2'>
+                                    <div className='flex-row space-between'>
                                         <p className='flex-row github-p'>
                                             <a
                                                 className="App-link github-link"

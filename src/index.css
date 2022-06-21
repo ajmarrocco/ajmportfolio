@@ -583,6 +583,11 @@ textarea{
     font-size: .75rem;
   }
 
+  .image-title{
+    width: 300px;
+    text-align: center;
+  }
+
   .right-arrow, .left-arrow{
     font-size: 1.5rem;
   }
@@ -608,6 +613,10 @@ textarea{
   .image-description, .image-technologies{
     width: 200px;
     font-size: .5rem;
+  }
+
+  .image-title{
+    width: 200px;
   }
 
   .right-arrow, .left-arrow{
