@@ -22,7 +22,7 @@ function Header(props) {
                 <ul className="flex-row">
                     {titles.map((title) => (
                     <li
-                        className={`mx-1 ${
+                        className={`mx-2 ${
                             currentTitle === title && `navActive`
                         }`}
                         key={title}
