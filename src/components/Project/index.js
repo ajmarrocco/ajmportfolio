@@ -10,7 +10,8 @@ function Project(props) {
                 That information will then display the Hotels, Restuarants, Attractions, and ratings 
                 for multiple locations using information obtained from external APIs. The APIs that 
                 we used are google Maps API & The Stripe API.`,
-            github: `https://github.com/AlessandroB96/Travela`,
+            technologies:'React, Node.js, Express.js, JavaScript, MongoDB, Mongoose, Apollo Server, GraphQL, Heroku',
+            github: `https://github.com/ajmarrocco/Travela`,
             url: `http://travelamap.herokuapp.com/`
         },
         {
@@ -18,7 +19,8 @@ function Project(props) {
             description:
                 `Collaborative full stack workout social media platform where 
                 users can view workouts based on category and comment on individual workouts`,
-            github: `https://github.com/AlessandroB96/GymQuest`,
+            technologies:'Node.js, Express.js, JavaScript, HTML, CSS, Handlebars.js, MySQL, RESTFul APIs, Dotenv, Bcrypt',
+            github: `https://github.com/ajmarrocco/GymQuest`,
             url: `https://gym-quest.herokuapp.com/`
         },
         {
@@ -27,8 +29,9 @@ function Project(props) {
                 `Space missions from companies such as NASA, SpaceX, Virgin Galactic and Blue 
                 Origin has made the desire to go to space increase exponentially over the past 
                 couple of years. We would like to make that dream realistic for everyone!`,
-            github: `https://github.com/sarahhart1997/space-sounds`,
-            url: `https://sarahhart1997.github.io/space-sounds/`
+            technologies:'YouTube Data API v3, NASA Image and Video Library API, GitHub, BootStrap, JavaScript, HTML, CSS',
+            github: `https://github.com/ajmarrocco/space-sounds`,
+            url: `https://ajmarrocco.github.io/space-sounds/`
         },
         {
             name: "Shop Shop",
@@ -36,6 +39,7 @@ function Project(props) {
                 `This project take the e-commerce platform replaces its implementation to handle 
                 complex state management using Redux, the open-source JavaScript library that it 
                 emulates.`,
+            technologies:'React, Node.js, Express.js, JavaScript, MongoDB, Mongoose, GraphQL, Heroku',
             github: `https://github.com/ajmarrocco/shop-shop`,
             url: `https://shop-and-redux.herokuapp.com/`
         },
@@ -46,6 +50,7 @@ function Project(props) {
                 can create an account, post their thoughts for others to see, and interact with other 
                 users through these thoughts. This is accomplished by using a MERN application. Feel free 
                 to contribute your own thoughts!`,
+            technologies:'React, Node.js, Express.js, JavaScript, MongoDB, Mongoose, GraphQL, Heroku',
             github: `https://github.com/ajmarrocco/deep-thoughts`,
             url: `https://deep-thoughts-3510.herokuapp.com/`
         },
@@ -54,6 +59,7 @@ function Project(props) {
             description:
                 `A budget tracker that uses a NoSQL database to enable a website to handle 
                 large amounts of data`,
+            technologies:'Node.js, JavaScript, MongoDB, Mongoose, PWAs',
             github: `https://github.com/ajmarrocco/keeping-up-with-my-budget`,
             url: `https://keeping-up-with-my-budget.herokuapp.com/`
         },
@@ -62,6 +68,7 @@ function Project(props) {
             description:
                 `A webpage that allows users to create an acccount. Then the user is able to view, create, 
                 update and delete posts. The user is also allowed to comment on their or another users posts.`,
+            technologies:'Node.js, Express.js, JavaScript, HTML, CSS, Handlebars.js, MySQL, RESTFul APIs, Dotenv, Bcrypt',
             github: `https://github.com/ajmarrocco/techs-marks-the-spot`,
             url: `https://morning-reaches-56446.herokuapp.com/`
         }
@@ -106,27 +113,33 @@ function Project(props) {
                                     className="img-thumbnail mx-1"
                                     key={image.name}
                                     />
+                                    <p className='image-description'>
+                                        {image.description}
+                                    </p>
+                                    <p className='image-technologies'>
+                                        {image.technologies}
+                                    </p>
                                     <div className='flex-row space-between mx-2'>
-                                    <p className='flex-row github-p'>
-                                        <a
-                                            className="App-link github-link"
-                                            href={image.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Github
-                                        </a>
-                                    </p>
-                                    <p className='deployed-url-p'>
-                                        <a
-                                            className="App-link deployed-url-link"
-                                            href={image.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Deployed Url
-                                        </a>
-                                    </p>
+                                        <p className='flex-row github-p'>
+                                            <a
+                                                className="App-link github-link"
+                                                href={image.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Github
+                                            </a>
+                                        </p>
+                                        <p className='deployed-url-p'>
+                                            <a
+                                                className="App-link deployed-url-link"
+                                                href={image.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Deployed Url
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             )}

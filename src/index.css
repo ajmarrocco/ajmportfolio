@@ -307,7 +307,7 @@ button {
   text-align: center;
 }
 
-.resume-link {
+.resume-link, .github-link, .deployed-url-link {
   font-size: 20px;
   background-color: var(--dark);
   padding: 10px;
@@ -315,7 +315,7 @@ button {
   text-decoration: none;
 }
 
-.resume-link:hover {
+.resume-link:hover, .github-link:hover, .deployed-url-link:hover {
   background-color: var(--light);
   color: var(--primary);
   text-decoration: none;
@@ -414,6 +414,10 @@ textarea{
   padding: 30px 0;
 }
 
+.image-description, .image-technologies{
+  width: 900px;
+  margin-bottom: 25px;
+}
 /* .slider-border{
   box-shadow: 3px 3px 3px rgb(0 0 0 / 50%), -3px -3px 3px rgb(0 0 0 / 50%);
   background-color: #0958ad;
@@ -493,6 +497,9 @@ textarea{
     margin-bottom: 30px;
   }
   
+  .image-description, .image-technologies{
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -502,6 +509,10 @@ textarea{
     border-radius: 10px;
     display: block;
     margin-bottom: 30px;
+  }
+
+  .image-description, .image-technologies{
+    width: 500px;
   }
 }
 
@@ -528,6 +539,11 @@ textarea{
     border-radius: 10px;
     display: block;
     margin-bottom: 30px;
+  }
+
+  .image-description, .image-technologies{
+    width: 400px;
+    font-size: .75rem;
   }
 }
 
@@ -562,16 +578,21 @@ textarea{
     margin-bottom: 30px;
   }
 
+  .image-description, .image-technologies{
+    width: 300px;
+    font-size: .75rem;
+  }
+
   .right-arrow, .left-arrow{
     font-size: 1.5rem;
   }
 
   .right-arrow{
-    right: -20px
+    right: -30px
   }
 
   .left-arrow{
-    left: -20px
+    left: -30px
   }
 }
 
@@ -584,16 +605,21 @@ textarea{
     margin-bottom: 30px;
   }
 
+  .image-description, .image-technologies{
+    width: 200px;
+    font-size: .5rem;
+  }
+
   .right-arrow, .left-arrow{
     font-size: 1.5rem;
   }
 
   .right-arrow{
-    right: -20px
+    right: -30px
   }
 
   .left-arrow{
-    left: -20px
+    left: -30px
   }
 
   .deployed-url-link, .github-link{
