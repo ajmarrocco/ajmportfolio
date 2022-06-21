@@ -33,11 +33,15 @@ function ContactForm() {
         }
     };
 
+    const clearFields = (e) =>{
+        setFormState('');
+    }
+
     return (
         <section className='contact-section'>
         <h1 className="contact-title" data-testid="h1tag">Contact me</h1>
             <div className='contact-container'>
-                <form id="contact-form" onSubmit={handleSubmit}>
+                {/* <form id="contact-form" onSubmit={handleSubmit}>
                     <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -59,11 +63,11 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                     )}
-                    <button data-testid="button" type="submit">Submit</button>
-                </form>
+                    <button data-testid="button" type="submit" onClick={clearFields}>Submit</button>
+                </form> */}
             </div>
             <div className='mx-2 contact-info'>
-                <div className='flex-row space-evenly'>
+                {/* <div className='flex-row space-evenly'> */}
                     <h2>
                         <a href="tel:(917)846-8357" className='contact'>
                             <span className = "icon" title = 'Phone' data-tooltip = 'Phone'><i className="fas fa-mobile-alt"></i></span>{" "}
@@ -76,8 +80,8 @@ function ContactForm() {
                             Email
                         </a>
                     </h2>
-                </div>
-                <div className='flex-row space-evenly'>
+                {/* </div> */}
+                {/* <div className='flex-row space-evenly'> */}
                     <h2>
                         <a href="https://github.com/ajmarrocco" target="_blank" rel="noopener noreferrer" className='mx-2 contact'>
                             <span className = "icon" title = 'GitHub' data-tooltip = 'GitHub'><i className="fab fa-github"></i></span>{" "}
@@ -96,7 +100,7 @@ function ContactForm() {
                             Stack Overflow
                         </a>
                     </h2>
-                </div>
+                {/* </div> */}
             </div>
         </section>
     );
