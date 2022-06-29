@@ -43,17 +43,17 @@ function Project(props) {
             github: `https://github.com/ajmarrocco/shop-shop`,
             url: `https://shop-and-redux.herokuapp.com/`
         },
-        {
-            name: "Deep Thoughts",
-            description:
-                `The application is a social media application called "Deep Thoughts," where users 
-                can create an account, post their thoughts for others to see, and interact with other 
-                users through these thoughts. This is accomplished by using a MERN application. Feel free 
-                to contribute your own thoughts!`,
-            technologies:'React, Node.js, Express.js, JavaScript, MongoDB, Mongoose, GraphQL, Heroku',
-            github: `https://github.com/ajmarrocco/deep-thoughts`,
-            url: `https://deep-thoughts-3510.herokuapp.com/`
-        },
+        // {
+        //     name: "Deep Thoughts",
+        //     description:
+        //         `The application is a social media application called "Deep Thoughts," where users 
+        //         can create an account, post their thoughts for others to see, and interact with other 
+        //         users through these thoughts. This is accomplished by using a MERN application. Feel free 
+        //         to contribute your own thoughts!`,
+        //     technologies:'React, Node.js, Express.js, JavaScript, MongoDB, Mongoose, GraphQL, Heroku',
+        //     github: `https://github.com/ajmarrocco/deep-thoughts`,
+        //     url: `https://deep-thoughts-3510.herokuapp.com/`
+        // },
         {
             name: "Keeping Up With My Budget!",
             description:
