@@ -7,6 +7,7 @@ function Resume() {
     const [databases] = useState(['MongoDB', 'MySQL', 'SQL', 'NoSQL', 'Sequelize', 'Mongoose'])
     const [tools] = useState(['Git','GitHub','GitLab','Insomnia','AWS', 'MongoDB Atlas']);
     const [frameworks] = useState(['React','Express','Bootstrap', 'Node.js','jQuery', 'Redux']);
+    const lastLanguage = 'CSS';
 
     return (
         <div className='resume-skills'>
@@ -36,14 +37,21 @@ function Resume() {
                     <h3 style={{display: 'inline'}}>
                         Languages:
                     </h3>
-                    {languages.map(language => (
-                    <li
-                        style={{display: 'inline'}}
-                        className={`mx-1 py-12`}
-                        key={language}
-                    >
-                        {language}
-                    </li>
+                    {languages.map(language => 
+                        // if(language === lastLanguage){
+                        //     console.log(lastLanguage)
+                        // }
+                    (
+                        <li
+                            style={{display: 'inline'}}
+                            className={`mx-1 py-12`}
+                            key={language}
+                        >
+                            {language} 
+                            {/* if(language !== lastLanguage){
+                                ","
+                            } */}
+                        </li>
                     ))}
                 </ul>
                 <ul className='database-list flex-row'> 
