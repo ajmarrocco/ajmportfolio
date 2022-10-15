@@ -119,8 +119,8 @@ function Project(props) {
                                     <p className='image-technologies'>
                                         {image.technologies}
                                     </p>
-                                    <div className='flex-row space-between'>
-                                        <p className='flex-row github-p'>
+                                    {/* <div className='flex-row space-between'> */}
+                                        <p className='github-p'>
                                             <a
                                                 className="App-link github-link"
                                                 href={image.github}
@@ -140,7 +140,7 @@ function Project(props) {
                                                 Deployed Url
                                             </a>
                                         </p> */}
-                                    </div>
+                                    {/* </div> */}
                                 </div>
                             )}
                             

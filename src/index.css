@@ -315,6 +315,11 @@ button {
   text-decoration: none;
 }
 
+
+.github-p{
+  text-align: center;
+}
+
 .resume-link:hover, .github-link:hover, .deployed-url-link:hover {
   background-color: var(--light);
   color: var(--primary);
