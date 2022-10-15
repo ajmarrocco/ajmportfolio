@@ -130,7 +130,7 @@ function Project(props) {
                                                 Github
                                             </a>
                                         </p>
-                                        <p className='deployed-url-p'>
+                                        {/* <p className='deployed-url-p'>
                                             <a
                                                 className="App-link deployed-url-link"
                                                 href={image.url}
@@ -139,7 +139,7 @@ function Project(props) {
                                             >
                                                 Deployed Url
                                             </a>
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
                             )}
