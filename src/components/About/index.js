@@ -10,7 +10,7 @@ function About() {
                 <img src={profileImage} className="about-img my-2 px-2" alt="cover"  />
                 {/* <div className="my-2"> */}
                 <p className="about-p my-2 px-2">
-                    Aspiring software engineer with a background in mechanical engineering and physics.  I completed a
+                    Software engineer with a background in mechanical engineering and physics.  I completed a
                     Certification Program in Full Stack Web Development - Coding from Columbia University in May 2022. Skills 
                     include JavaScript, HTML, CSS, Node.js, React, MongoDB, Express.js, GraphQL, Apollo, Bootstrap, OOP and TDD. 
                     Independently, I have also learned C#, C++, Java. AWS, and Python.  Please review my portfolio, resume, feel
