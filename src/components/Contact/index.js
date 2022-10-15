@@ -68,7 +68,7 @@ function ContactForm() {
             </div>
             <div className='mx-2 contact-info'>
                 {/* <div className='flex-row space-evenly'> */}
-                    <h2>
+                    {/* <h2>
                         <a href="tel:(917)846-8357" className='contact'>
                             <span className = "icon" title = 'Phone' data-tooltip = 'Phone'><i className="fas fa-mobile-alt"></i></span>{" "}
                             917-846-8357
@@ -79,7 +79,7 @@ function ContactForm() {
                             <span className = "icon" title = 'Envelope' data-tooltip = 'Envelope'><i className="far fa-envelope"></i></span>{" "}
                             Email
                         </a>
-                    </h2>
+                    </h2> */}
                 {/* </div> */}
                 {/* <div className='flex-row space-evenly'> */}
                     <h2>
