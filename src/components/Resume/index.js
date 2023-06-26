@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import downloadResume from '../../assets/pdf/Anthony Marrocco Resume.pdf';
+import downloadResume from '../../assets/pdf/Anthony_Marrocco-Resume_Website.pdf';
 
 function Resume() {
 
-    const [languages] = useState(['JavaScript', 'Java', 'C++', 'C#', 'Python','HTML', 'CSS']);
+    const [languages] = useState(['Python', 'Java', 'JavaScript', 'MATLAB', 'JSON', 'XML','HTML', 'CSS']);
     const [databases] = useState(['MongoDB', 'MySQL', 'SQL', 'NoSQL', 'Sequelize', 'Mongoose'])
-    const [tools] = useState(['Git','GitHub','GitLab','Insomnia','AWS', 'MongoDB Atlas']);
-    const [frameworks] = useState(['React','Express','Bootstrap', 'Node.js','jQuery', 'Redux']);
+    const [tools] = useState(['Linux','Git','GitHub','Bitbucket','Insomnia','AWS']);
+    const [frameworks] = useState(['Django', 'Flask','React','Express','Bootstrap', 'Node.js','jQuery']);
     const lastLanguage = 'CSS';
 
     return (

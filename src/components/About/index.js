@@ -10,11 +10,11 @@ function About() {
                 <img src={profileImage} className="about-img my-2 px-2" alt="cover"  />
                 {/* <div className="my-2"> */}
                 <p className="about-p my-2 px-2">
-                    Software engineer with a background in mechanical engineering and physics.  I completed a
-                    Certification Program in Full Stack Web Development - Coding from Columbia University in May 2022. Skills 
-                    include JavaScript, HTML, CSS, Node.js, React, MongoDB, Express.js, GraphQL, Apollo, Bootstrap, OOP and TDD. 
-                    Independently, I have also learned C#, C++, Java. AWS, and Python.  Please review my portfolio, resume, feel
-                    to contact me with any inquiries!
+                    I am currently working as a Software Engineer at JPMorgan Chase & Co since October 2022.  My interests 
+                    include Artificial Intelligence and Machine Learning.  I also have a background in mechanical engineering and physics.  
+                    Most recently, I completed a Certification Program in Full Stack Web Development - Coding from Columbia University in May 2022. 
+                    My skills include JPython, Java, Linux, JavaScript, CSS, HTML, MATLAB, and JSON.  Please review my portfolio, resume, 
+                    feel to contact me with any inquiries!
                     {/* Recently, I created a project that intends to 
                     provide a desired trip location itinerary for the user. That information will then display the Hotels, Restuarants, 
                     Attractions, and ratings for multiple locations using information obtained from Google Maps API.  The technologies used 
