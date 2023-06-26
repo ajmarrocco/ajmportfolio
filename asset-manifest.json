@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.cbebe720.css",
-    "main.js": "/static/js/main.bc628208.js",
+    "main.js": "/static/js/main.f8cfcaf8.js",
     "static/js/787.48a05dca.chunk.js": "/static/js/787.48a05dca.chunk.js",
     "static/media/background-copy.jpg": "/static/media/background-copy.c03462c7ede06c56f6b4.jpg",
     "static/media/3.png": "/static/media/3.fb38b57fbc363cc70b52.png",
     "static/media/2.png": "/static/media/2.dc1f051eeee7887cf09f.png",
     "static/media/1.png": "/static/media/1.5b3930331278ffc0f6fe.png",
     "static/media/0.png": "/static/media/0.9648ff2542d0950dbd89.png",
-    "static/media/Anthony Marrocco Resume.pdf": "/static/media/Anthony Marrocco Resume.a9d00bf8f5223688d5c8.pdf",
     "static/media/6.png": "/static/media/6.87031e5daaacf1f6a11c.png",
+    "static/media/Anthony_Marrocco-Resume_Website.pdf": "/static/media/Anthony_Marrocco-Resume_Website.e674d2861aba92cd0325.pdf",
     "static/media/4.png": "/static/media/4.701e71ed0347f63b08f7.png",
     "static/media/5.png": "/static/media/5.1d464ab039e59211d78a.png",
     "static/media/profile.jpg": "/static/media/profile.3ad4c857ddd9e441c921.jpg",
     "index.html": "/index.html",
     "main.cbebe720.css.map": "/static/css/main.cbebe720.css.map",
-    "main.bc628208.js.map": "/static/js/main.bc628208.js.map",
+    "main.f8cfcaf8.js.map": "/static/js/main.f8cfcaf8.js.map",
     "787.48a05dca.chunk.js.map": "/static/js/787.48a05dca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbebe720.css",
-    "static/js/main.bc628208.js"
+    "static/js/main.f8cfcaf8.js"
   ]
 }
