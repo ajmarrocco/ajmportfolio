@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer>
-            <h3 className="px-2">&copy; 2022 by Anthony Marrocco 🌌</h3>
+            <h3 className="px-2">&copy; 2023 by Anthony Marrocco 🌌</h3>
         </footer>
     )
 }
